@@ -7,7 +7,7 @@ load_dotenv() #Load all the environment variables from .env file
 
 
 from openai import OpenAI
-OpenAI.api_key=os.getenv("OPENAI_API_KEY")
+OpenAI.api_key=os.getenv("API_KEY")
 client = OpenAI()
 
 
@@ -138,4 +138,5 @@ def main():
             st.subheader(f"You scored {marks} out of {len(questions)}")
 
 if __name__ == "_main_":
+
   main()
